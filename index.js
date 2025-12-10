@@ -10,6 +10,8 @@ gridSizeSlider.addEventListener("input", ()=>{
 
 });
 
+const displayColor =  document.getElementById("colorPicker");
+const colorPicker = document.querySelector(".color-picker");
 
 
 
@@ -26,8 +28,13 @@ function createGrid(size){
             gridCell.style.width = cellSize + "px";
             gridCell.style.height = cellSize + "px";
 
-            gridCell.addEventListener("mouseenter",()=>{
-                gridCell.style.backgroundColor = "red";
+            colorPicker.addEventListener("input", () =>{
+
+            
+                gridCell.addEventListener("mouseenter",()=>{
+                    gridCell.style.backgroundColor = displayColor.value;
+
+                })
             })
         }
     }
