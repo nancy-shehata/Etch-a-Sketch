@@ -1,0 +1,20 @@
+#grid-container {
+    display:flex;
+    flex-wrap:wrap;
+    
+    margin:0;
+    width: 400px; /* Example fixed width for the container */
+    height: 400px; /* Example fixed height for the container */
+    border: 1px solid black;
+}
+
+
+
+.grid-cell {
+    border: 1px solid lightgray;
+   /* width:25px; /* 400/16 gives us the exact px needed to fit 16x16 */
+   /* height:25px; */
+    box-sizing:border-box; /* makes border included in width and height of each cell */
+}
+
+
