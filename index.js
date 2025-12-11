@@ -3,8 +3,9 @@ let gridSize = 16;
 
 const gridSizeSlider = document.getElementById("myRange");
 const displayGridVal = document.querySelector(".display-grid-size-text");
+displayGridVal.textContent = "Grid Size: "
 gridSizeSlider.addEventListener("input", ()=>{
-        displayGridVal.textContent = "Grid Size: " + gridSizeSlider.value + " x " + gridSizeSlider.value;
+        displayGridVal.textContent =  "Grid Size: " + gridSizeSlider.value + " x " + gridSizeSlider.value;
         gridContainer.textContent = "";
         createGrid(gridSizeSlider.value);
 

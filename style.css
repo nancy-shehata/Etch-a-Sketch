@@ -58,6 +58,8 @@ body{
     font-family:'Lobster', cursive;
     font-size:50px;
 }
+
+
 .border{
     background-color:#FF4433;
     padding:80px;
@@ -65,6 +67,7 @@ body{
     padding-bottom:20px;
     border-radius:10px;
     border:none;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
 }
 
 .grid-size-slider{
