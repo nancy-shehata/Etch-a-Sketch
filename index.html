@@ -7,14 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="color-picker">
-        <input type="color" id="colorPicker" value="#FF000">
+    <div class="container">
+
+        <div class="border">
+            <h1 class="title">Etch-A-Sketch</h1>
+            <div id="grid-container"></div>
+
+            <div class="align-options">
+                <button class="clear-btn">Clear</button>
+
+                <div class="color-picker">
+                    <input type="color" id="colorPicker" value="#FF000">
+                </div>
+                
+                <div class="grid-size-slider">
+                    <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
+                    <div class="display-grid-size-text"></div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
-    <div class="display-grid-size-text"></div>
-   <div class="grid-size-slider">Grid Size:
-    <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
-   </div>
-    <div id="grid-container"></div>
 
 
 
