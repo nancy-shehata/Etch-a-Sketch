@@ -46,9 +46,9 @@ createGrid(gridSize);
 
 function clearGrid(){
     const clear = document.querySelector(".clear-btn");
-    const gridCell = document.querySelectorAll(".grid-cell")
-        gridCell.forEach((gridCell) =>{
             clear.addEventListener("click", () =>{
+            const gridCell = document.querySelectorAll(".grid-cell")
+            gridCell.forEach((gridCell) =>{
                 gridCell.style.backgroundColor = "";
                 console.log("clicked")
                 
