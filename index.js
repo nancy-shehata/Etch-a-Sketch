@@ -63,11 +63,11 @@ clearGrid();
 
 document.addEventListener("DOMContentLoaded", () =>{
     const sky = document.getElementById("sky")
-    const cloudNum = 25;
+    const cloudNum = 50;
 
     function createCloud(){
         const cloud = document.createElement("img")
-        const randomSize = Math.random() * 800 + 1000;
+        const randomSize = Math.random() * 500 + 80;
         cloud.style.width = randomSize + "px";
         cloud.style.left = randomSize +"%";
         cloud.src = "images/cloud.png"
