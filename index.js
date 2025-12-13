@@ -67,10 +67,11 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     function createCloud(){
         const cloud = document.createElement("img")
-        const randomSize = Math.random() * 400 + 800;
+        const randomSize = Math.random() * 800 + 1000;
         cloud.style.width = randomSize + "px";
+        cloud.style.left = randomSize +"%";
         cloud.src = "images/cloud.png"
-        sky.appendChild(cloud)
+        sky.appendChild(cloud);
         cloud.classList.add("cloud");
     }
     for(let i=0; i<cloudNum;i++){   
